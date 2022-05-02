@@ -1,0 +1,209 @@
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.  touch homew2.txt
+ 2. Сценарий перенесите в этот файл.    vim copy past :wq
+ 3. На против каждого действия - напишите команду в GitBash   --
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.  / github.com / your repositories / news / заполняем поле "Repository name*": JSON / ставим галочки Public, Add a README file / create repository
+ 5. Клонировать репозиторий JSON на локальный компьютер.  / code / copy: "https://github.com/xenalex/JSON.git" / в терминале: mkdir hwterminal / cd hwterminal / git clone https://github.com/xenalex/JSON.git 
+ 6. Внутри локального JSON создать файл “new.json”.  / cd JSON / touch new.json
+ 7. Добавить файл под гит. / git add new.json
+ 8. Закоммитить файл.  / git commit -m "new hw"
+ 9. Отправить файл на внешний GitHub репозиторий.  / git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, коiличество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
+ /vim new.json / i/ 
+ {	
+	"full name":"Каринa Сергеевна Запояско ",
+    "age":"35",
+    "pets amount":"1",
+    "future desired salary":"1000000"
+ }
+/ esc / :wq
+
+ 11. Отправить изменения на внешний репозиторий. /git status / git add . / git commit -m "first task" / git push
+ 12. Создать файл preferences.json  / touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON:
+ / vim preferences.json / i /
+ {
+	"favorite movie":"Гарри Поттер",
+	"favorite TV series":"Игра престолов",
+	"favorite food":"Селедка под шубой",
+	"favorite time of year":"Весна",
+	"the country you would like to visit":"Австралия, Канада"
+}
+/ esc / :wq
+ 
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON:
+ touch sklls.json / vim sklls.json / i /
+ {
+        "GitBash",
+        "VSCode",
+        "Postman",
+        "основы JavaScript"
+}
+/ esc / :wq
+ 
+ 15. Отправить сразу 2 файла на внешний репозиторий. / git add . / git commit -m "second task" / git push
+ 16. На веб интерфейсе создать файл bug_report.json. / add file / create new file / называем: bug_report.json
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. /в поле "Create new file" пишу: first file / commit new file
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON. / выбрать файл bug_report.json / edit this file /
+ 
+ {
+        "ID": "A1",
+        "Title": "Нажатие кнопки 'Перейти в каталог' на главной странице не перенаправляет на страницу Каталога",
+        "Project": "Сайт магазина интим-товаров 'Штучки-дрючки'",
+        "STR": [
+                "1. Зайти на главную страницу сайта (ссылка_на_сайт)",
+                "2. Нажать кнопку Каталог"
+        ],
+        "Environment":
+        {
+                "OS": "Windows 10 x64 build 19043",
+                "Браузер": "Google Chrome v96.0.4664.45 x64"
+        },
+        "Component": "Кнопка Каталог",
+        "Build": "0.5.7",
+        "Actual result": "Нажатие кнопки Каталог НЕ перенаправляет на страницу Каталога",
+        "Expected result": "Нажатие кнопки Каталог перенаправляет на страницу Каталога",
+        "Severity": "Критическая",
+        "Priority": "Высокий",
+        "Status": "Открыто",
+        "Author": "Вадим Владиславович",
+        "Sign to": "Ололошка Кеков",
+        "Attachments": "ссылка_на_картинку_или_видео_с_багом"
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. / new commit: update file / Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON   /git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML. / github.com / your repositories / news / заполняем поле "Repository name*" XML/ ставим галочки Public, Add a README file / create repository
+ 22. Клонировать репозиторий XML на локальный компьютер. /git clone https://github.com/xenalex/XML.git
+ 23. Внутри локального XML создать файл “new.xml”. /cd XML / touch new.xml
+ 24. Добавить файл под гит. / git add new.xml
+ 25. Закоммитить файл. / git commit -m "first task"
+ 26. Отправить файл на внешний GitHub репозиторий. / git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML:
+ /vim new.xml / i /
+ <info>
+        <full_name>"Карина Сергеевна Запояско"</full_name>
+        <age>35</age>
+        <pets_amount>1</pets_amount>
+        <future_desired_salary>1000000</future_desired_salary>
+/ esc / :wq
+ 
+ 28. Отправить изменения на внешний репозиторий. / git add . / git commit -m 'second task' / git push
+ 29. Создать файл preferences.xml / touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML:
+ / vim preferences.xml / i /
+ <info>
+        <favorite movie>Гарри Поттер</favorite movie>
+        <favorite TV series>Игра престолов</favorite TV series>
+        <favorite food>Селедка под шубой</favorite food>
+        <favorite time of year>Весна</favorite time of year>
+		<the country you would like to visit>Австралия, Канада</the country you would like to visit>
+</info>
+/ esc / :wq
+ 
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML: /touch skll.xml/
+ vim skll.xml / i / 
+ <skill>
+        <sk1>GitBash</sk1>
+        <sk2>VSCode</sk2>
+        <sk3>Postman</sk3>
+        <sk4>основы JavaScript</sk4>
+</skill>
+/esc / :wq
+ 32. Сделать коммит в одну строку. /git add -A && git commit -m "third task"
+ 33. Отправить сразу 2 файла на внешний репозиторий. /git push
+ 34. На веб интерфейсе создать файл bug_report.xml. / add file / create new file / называем: bug_report.xml
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. /в поле "Create new file" пишу: first file / commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML: / выбрать файл bug_report.xml / edit this file /
+ 
+ <?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <ID>A1</ID>
+  <Title>Нажатие кнопки &apos;Перейти в каталог&apos; на главной странице не перенаправляет на страницу Каталога</Title>
+  <Project>Сайт магазина интим-товаров &apos;Штучки-дрючки&apos;</Project>
+  <STR>1. Зайти на главную страницу сайта (ссылка_на_сайт)</STR>
+  <STR>2. Нажать кнопку Каталог</STR>
+  <Environment>
+    <OS>Windows 10 x64 build 19043</OS>
+    <Браузер>Google Chrome v96.0.4664.45 x64</Браузер>
+  </Environment>
+  <Component>Кнопка Каталог</Component>
+  <Build>0.5.7</Build>
+  <Actual result>Нажатие кнопки Каталог НЕ перенаправляет на страницу Каталога</Actual result>
+  <Expected result>Нажатие кнопки Каталог перенаправляет на страницу Каталога</Expected result>
+  <Severity>Критическая</Severity>
+  <Priority>Высокий</Priority>
+  <Status>Открыто</Status>
+  <Author>Вадим Владиславович</Author>
+  <Sign to>Ололошка Кеков</Sign to>
+  <Attachments>ссылка_на_картинку_или_видео_с_багом</Attachments>
+</root>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  / new commit: second file / Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML  / git pull
+ 
+ TXT
+ 1. Создать внешний репозиторий c названием TXT. / github.com / your repositories / news / заполняем поле "Repository name*" TXT/ ставим галочки Public, Add a README file / create repository 
+ 2. Клонировать репозиторий TXT на локальный компьютер. /git clone https://github.com/xenalex/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. / cd TXT / touch new.txt
+ 4. Добавить файл под гит. / git add new.txt
+ 5. Закоммитить файл. / git commit -m "first commit"
+ 6. Отправить файл на внешний GitHub репозиторий.  / git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT:
+ /vim new.txt / i / 
+
+full name:"Каринa Сергеевна Запояско ",
+age:"35",
+pets amount:"1",
+future desired salary:"1000000"
+/ esc / :wq
+ 8. Отправить изменения на внешний репозиторий. / git commit -am "Second commit"/ git push
+ 9. Создать файл preferences.txt / touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT:
+ / vim preferences.txt / i /
+ 
+favorite movie:"Гарри Поттер",
+favorite TV series:"Игра престолов",
+favorite food:"Селедка под шубой",
+favorite time of year:"Весна",
+the country you would like to visit:"Австралия, Канада"
+
+/ esc / :wq
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT:
+ / touch sklls.txt / vim sklls.txt / i /
+ 
+ 1)GitBash
+ 2)VSCode
+ 3)Postman
+ 4)основы JavaScript
+ 
+ / esc / :wq
+ 
+ 12. Сделать коммит в одну строку. / git add -A && git commit -m "Third commit"
+ 13. Отправить сразу 2 файла на внешний репозиторий. / git push
+ 14. На веб интерфейсе создать файл bug_report.txt. / / add file / create new file / называем: bug_report.txt
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. /в поле "Create new file" пишу: Create file / commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT: / выбрать файл bug_report.txt / edit this file /
+ 
+ Id	A1
+Name	FF53 - User can enter alphabetical and special symbols to DOB fie
+Steps	1. Log in to MiAgent portal 
+	2. Search for a customer
+	3. Click on Edit icon near Income/Last Changed
+	4. Click on Occupant
+	5. Enter alphabetical and special symbols to DOB field
+Actual result	User can enter alphabetical and special symbols to DOB field
+Expected result	User can't enter alphabetical and special symbols to DOB field
+Attachments	http://prntscr.com/jas795
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. / new commit: Update file / Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT  / git pull

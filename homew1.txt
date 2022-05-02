@@ -1,0 +1,57 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я   pwd
+2) Создать папку    mkdir qa1
+3) Зайти в папку    cd qa1
+4) Создать 3 папки  mkdir -p {qa2,qa3,qa4}
+5) Зайти в любоую папку  cd qa3
+6) Создать 5 файлов (3 txt, 2 json) touch {kk.txt,ii.txt,aa.txt,vv.txt,dd.txt,xx.json,ww.json}
+7) Создать 3 папки mkdir {r1,r2,r3}
+8) Вывести список содержимого папки ls -la
+9) + Открыть любой txt файл vi > vv.txt    *команда vim и знак > не нужен*
+10) + написать туда что-нибудь, любой текст: insert 
+Hello world!!!
+12345
+I like testing!
+11) + сохранить и выйти. esc :wq
+12) Выйти из папки на уровень выше cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. mv qa3/{aa.txt,kk.txt} qa2  
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. cp qa3/{vv.txt,ww.json} qa4                                                                        cp qa_3/nn.txt r2/nn.txt 
+15) Найти файл по имени  find . -name 'vv.txt'
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. tail -f 'vv.txt'|grep 'like'
+17) вывести несколько первых строк из текстового файла  head -4 'vv.txt'
+18) вывести несколько последних строк из текстового файла tail -2 'vv.txt'
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.  less vv.txt
+20) вывести дату и время date 
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+curl http://162.55.220.72:5005/terminal-hw-request
+
+curl "http://162.55.220.72:5005/get_method?name=Karina&age=999"                     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    17  100    17    0     0    252      0 --:--:-- --:--:-- --:--:--   257["Karina","999"]
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+touch scr.sh
+vim scr.sh
+insert
+
+#!/bin/bash
+
+mkdir -p {qa2,qa3,qa4}
+cd qa3
+touch {kk.txt,ii.txt,aa.txt,vv.txt,dd.txt,xx.json,ww.json}
+mkdir {r1,r2,r3}
+ls -la
+mv qa3/{aa.txt,kk.txt} qa2
+
+esc :wq
+chmod +x ./scr.sh
+./scr.sh
+
+=====================
